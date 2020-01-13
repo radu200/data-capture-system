@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import Input from '../inputs/FormInput';
 import Button from '../inputs/Button';
 import style from './forms.module.scss';
@@ -22,7 +22,8 @@ export const DataCapture = ({ onSubmit, onChange, emailVal }) => {
         onChange={onChange}
       />
       <Input
-        title="Would you like to receive email with best offers ?"
+        title="Would you like to receive email with the best offers ?
+        ?"
         name="optedin"
         type="checkbox"
         onChange={onChange}
@@ -33,9 +34,9 @@ export const DataCapture = ({ onSubmit, onChange, emailVal }) => {
 };
 
 DataCapture.propTypes = {
-   onChange: PropTypes.func,
-   onSubmit: PropTypes.func,
-   emailVal: PropTypes.string
-}
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
+  emailVal: PropTypes.string,
+};
 
 export default DataCapture;
