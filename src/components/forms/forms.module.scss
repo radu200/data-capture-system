@@ -1,0 +1,13 @@
+.formContainer {
+    max-width: 400px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width:768px ){
+    .formContainer {
+        max-width: 100%;
+    }
+}
