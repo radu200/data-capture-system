@@ -20,7 +20,6 @@ const FormInput = ({ title, name, type, placeholder, onChange, value }) => {
 };
 
 FormInput.propTypes = {
-  id: PropTypes.string,
   title: PropTypes.string,
   name: PropTypes.string,
   type: PropTypes.string,

@@ -35,7 +35,6 @@ export const DataCapture = ({ onSubmit, onChange, emailVal }) => {
 DataCapture.propTypes = {
    onChange: PropTypes.func,
    onSubmit: PropTypes.func,
-   optedin: PropTypes.bool,
    emailVal: PropTypes.string
 }
 

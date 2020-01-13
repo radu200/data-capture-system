@@ -16,11 +16,7 @@ const withTimeOut = WrappedComponent => {
     }
 
     render() {
-      return this.state.redirect ? (
-        <Redirect to="/" />
-      ) : (
-        <WrappedComponent  />
-      );
+      return this.state.redirect ? <Redirect to="/" /> : <WrappedComponent />;
     }
   }
   return TimeOut;

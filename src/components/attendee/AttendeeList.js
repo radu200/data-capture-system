@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './AttendeeList.module.scss';
 
 const EventAttendeeList = ({ attendees, handleAttendee }) => {
@@ -12,5 +13,10 @@ const EventAttendeeList = ({ attendees, handleAttendee }) => {
     </>
   );
 };
+
+EventAttendeeList.propTypes  = {
+   attendees: PropTypes.array,
+   handleAttendee: PropTypes.func
+}
 
 export default EventAttendeeList;

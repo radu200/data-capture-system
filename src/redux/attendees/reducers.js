@@ -2,15 +2,14 @@ import {
   REQUEST_ATTENDEES,
   RECEIVED_ATTENDEES,
   FAILURE_ATTENDEES,
-  GET_ATTENDEE
+  GET_ATTENDEE,
 } from './constants';
 
 const attendeesState = {
   attendees: [],
-  attendeeId:null,
+  attendeeId: null,
   loading: false,
   error: null,
-
 };
 
 export const attendeesReducer = (state = attendeesState, action) => {
@@ -22,7 +21,7 @@ export const attendeesReducer = (state = attendeesState, action) => {
     case FAILURE_ATTENDEES:
       return { ...state, loading: false, error: action.err };
     case GET_ATTENDEE:
-       return {...state, attendeeId:action.id}
+      return { ...state, attendeeId: action.id };
     default:
       return state;
   }
